@@ -16,14 +16,23 @@ using System.Windows.Shapes;
 namespace ProjektObiektowe
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Home.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Home : Page
     {
-        public MainWindow()
+        public Home()
         {
             InitializeComponent();
-            Frame.Navigate(new Uri("Home.xaml", UriKind.Relative));
+        }
+
+        private void kategoriaStudent_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new Uri("Student.xaml", UriKind.Relative));
+        }
+
+        private void kategoriaWykladowca_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new Uri("Wykladowca.xaml", UriKind.Relative));
         }
     }
 }
