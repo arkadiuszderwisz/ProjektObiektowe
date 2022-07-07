@@ -19,6 +19,7 @@
             FontFamily="Agency FB" 
             FontSize="20"/>
         <TextBox 
+            x:Name="studentImie"
             HorizontalAlignment="Left" 
             Height="35" 
             TextWrapping="Wrap" 
@@ -38,6 +39,7 @@
             FontFamily="Agency FB" 
             FontSize="20"/>
         <TextBox 
+            x:Name="studentNazwisko"
             HorizontalAlignment="Left" 
             Height="35" 
             TextWrapping="Wrap" 
@@ -57,6 +59,7 @@
             FontFamily="Agency FB" 
             FontSize="20"/>
         <TextBox 
+            x:Name="studentData"
             HorizontalAlignment="Left" 
             Height="35" 
             TextWrapping="Wrap" 
@@ -76,6 +79,7 @@
             FontFamily="Agency FB" 
             FontSize="20"/>
         <TextBox 
+            x:Name="studentGrupa"
             HorizontalAlignment="Left" 
             Height="35" 
             TextWrapping="Wrap" 
@@ -86,6 +90,7 @@
             VerticalContentAlignment="Center" 
             Foreground="#FFBDBDBD"/>
         <Button 
+            Click="akcjaDodawanie_Click"
             Content="Dodaj" 
             HorizontalAlignment="Left" 
             VerticalAlignment="Top" 

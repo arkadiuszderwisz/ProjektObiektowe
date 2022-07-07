@@ -64,6 +64,28 @@
             Margin="495,133,0,0" 
             Opacity="0.6"/>
         <Button 
+            Click="studentEgzamin_Click"
+            Content="Wyszukaj egzaminy studenta" 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Top" 
+            Width="250" 
+            Margin="270,275,0,0" 
+            Height="80" 
+            RenderTransformOrigin="1.924,-0.125" 
+            FontSize="24" 
+            FontFamily="Agency FB" 
+            Background="#FFDDDDDD" 
+            BorderBrush="#FFDDDDDD" Panel.ZIndex="1"/>
+        <Border 
+            BorderBrush="#FFFBFBFB" 
+            BorderThickness="1" 
+            HorizontalAlignment="Left" 
+            Height="80" 
+            VerticalAlignment="Top" 
+            Width="276" 
+            Margin="257,257,0,0" 
+            Opacity="0.6"/>
+        <Button 
             Click="poprzedniaStrona_Click"
             Content="Poprzednia strona" 
             HorizontalAlignment="Left" 

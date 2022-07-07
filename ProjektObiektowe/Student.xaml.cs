@@ -37,5 +37,9 @@ namespace ProjektObiektowe
         {
             this.NavigationService.Navigate(new Uri("StudentSearch.xaml", UriKind.Relative));
         }
+        private void studentEgzamin_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new Uri("StudentEgzamin.xaml", UriKind.Relative));
+        }
     }
 }

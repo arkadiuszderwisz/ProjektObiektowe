@@ -12,25 +12,30 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Data.Entity.Core.Objects;
+
 namespace ProjektObiektowe
 {
     /// <summary>
-    /// Interaction logic for StudentAdd.xaml
+    /// Interaction logic for StudentEgzamin.xaml
     /// </summary>
-    public partial class StudentAdd : Page
+    public partial class StudentEgzamin : Page
     {
         universityEntities dataEntities = new universityEntities();
-        public StudentAdd()
+        public StudentEgzamin()
         {
             InitializeComponent();
         }
 
-        private void akcjaDodawanie_Click(object sender, RoutedEventArgs e)
+        private void akcjaSzukanie_Click(object sender, RoutedEventArgs e)
         {
-            DataSet1TableAdapters.studentsTableAdapter info = new DataSet1TableAdapters.studentsTableAdapter();
-            info.AddStudent(studentImie.Text, studentNazwisko.Text, studentData.Text, studentGrupa.Text);
-            MessageBox.Show("Pomyślnie dodano");
+            string zmienna = studentID.Text;
+            int nadalzmienna = int.Parse(zmienna);
+            var query =
+            from students_modules in dataEntities.students_modules
+            where students_modules.student_id == nadalzmienna
+            select new { students_modules.planned_exam_date };
+
+            dataGrid1.ItemsSource = query.ToList();
         }
     }
 }

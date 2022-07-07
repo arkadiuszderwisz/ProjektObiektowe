@@ -1,0 +1,57 @@
+﻿<Page x:Class="ProjektObiektowe.StudentEgzamin"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ProjektObiektowe"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="StudentEgzamin">
+
+    <Grid>
+        <Label 
+            Content="Wyszukaj studenta" 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Top" 
+            Margin="80,56,0,0" Height="60" 
+            Width="210" 
+            Foreground="White" 
+            FontFamily="Agency FB" 
+            FontSize="28" RenderTransformOrigin="0.924,-1.771"/>
+        <Label 
+            Content="ID Studenta" 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Top" 
+            Margin="80,135,0,0" Height="35" 
+            Width="77" 
+            Foreground="White" 
+            FontFamily="Agency FB" 
+            FontSize="18"/>
+        <TextBox 
+            x:Name="studentID"
+            Height="35" 
+            TextWrapping="Wrap" 
+            Text="" 
+            VerticalAlignment="Top" 
+            Width="119" 
+            Margin="0,135,488,0" 
+            VerticalContentAlignment="Center" 
+            Foreground="#FFBDBDBD" HorizontalAlignment="Right"/>
+        <Button 
+            Click="akcjaSzukanie_Click"
+            Content="Szukaj" 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Top" 
+            Width="167" 
+            Margin="80,220,0,0" 
+            Height="29" 
+            RenderTransformOrigin="1.924,-0.125" 
+            FontSize="18" 
+            FontFamily="Agency FB" 
+            Background="#FFDDDDDD" 
+            BorderBrush="#FFDDDDDD"/>
+        <DataGrid Name="dataGrid1" Margin="359,56,36,95">
+
+        </DataGrid>
+    </Grid>
+</Page>
