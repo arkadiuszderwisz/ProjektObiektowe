@@ -16,17 +16,13 @@ using System.Windows.Shapes;
 namespace ProjektObiektowe
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for WykladowcaSearch.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class WykladowcaSearch : Page
     {
-        
-        public MainWindow()
+        public WykladowcaSearch()
         {
             InitializeComponent();
-            Frame.Navigate(new Uri("Home.xaml", UriKind.Relative));
         }
-
-         
     }
 }

@@ -24,5 +24,18 @@ namespace ProjektObiektowe
         {
             InitializeComponent();
         }
+
+        private void poprzedniaStrona_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new Uri("Home.xaml", UriKind.Relative));
+        }
+        private void studentAdd_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new Uri("StudentAdd.xaml", UriKind.Relative));
+        }
+        private void studentSearch_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new Uri("StudentSearch.xaml", UriKind.Relative));
+        }
     }
 }

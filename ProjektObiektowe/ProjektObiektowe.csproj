@@ -102,6 +102,12 @@
     <Compile Include="Student.xaml.cs">
       <DependentUpon>Student.xaml</DependentUpon>
     </Compile>
+    <Compile Include="StudentAdd.xaml.cs">
+      <DependentUpon>StudentAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StudentSearch.xaml.cs">
+      <DependentUpon>StudentSearch.xaml</DependentUpon>
+    </Compile>
     <Compile Include="students_modules.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -116,6 +122,12 @@
     </Compile>
     <Compile Include="Wykladowca.xaml.cs">
       <DependentUpon>Wykladowca.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WykladowcaAdd.xaml.cs">
+      <DependentUpon>WykladowcaAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WykladowcaSearch.xaml.cs">
+      <DependentUpon>WykladowcaSearch.xaml</DependentUpon>
     </Compile>
     <Page Include="Home.xaml">
       <SubType>Designer</SubType>
@@ -137,7 +149,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="StudentAdd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StudentSearch.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Wykladowca.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WykladowcaAdd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WykladowcaSearch.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

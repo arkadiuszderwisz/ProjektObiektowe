@@ -20,7 +20,7 @@
             HorizontalContentAlignment="Center" 
             Foreground="White"/>
         <Button 
-            
+            Click="studentAdd_Click"
             Content="Dodaj studenta" 
             HorizontalAlignment="Left" 
             VerticalAlignment="Top" 
@@ -42,7 +42,7 @@
             Margin="39,133,0,0" 
             Opacity="0.6"/>
         <Button 
-           
+            Click="studentSearch_Click"
             Content="Wyszukaj studenta" 
             HorizontalAlignment="Left" 
             VerticalAlignment="Top" 
@@ -64,7 +64,7 @@
             Margin="495,133,0,0" 
             Opacity="0.6"/>
         <Button 
-            
+            Click="poprzedniaStrona_Click"
             Content="Poprzednia strona" 
             HorizontalAlignment="Left" 
             VerticalAlignment="Top" 
