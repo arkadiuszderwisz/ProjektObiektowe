@@ -9,6 +9,73 @@
       Title="Wykladowca">
 
     <Grid>
-        
+        <Label 
+            Content="Wykładowca" 
+            Margin="290,10,290,0" 
+            Height="96" 
+            Width="220" 
+            FontFamily="Agency FB" 
+            FontSize="36" 
+            VerticalAlignment="Top" 
+            HorizontalContentAlignment="Center" 
+            Foreground="White"/>
+        <Button 
+            
+            Content="Dodaj wykładowce" 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Top" 
+            Width="250" 
+            Margin="49,155,0,0" 
+            Height="80" 
+            RenderTransformOrigin="1.924,-0.125" 
+            FontSize="24" 
+            FontFamily="Agency FB" 
+            Background="#FFDDDDDD" 
+            BorderBrush="#FFDDDDDD" Panel.ZIndex="1"/>
+        <Border 
+            BorderBrush="#FFFBFBFB" 
+            BorderThickness="1" 
+            HorizontalAlignment="Left" 
+            Height="80" 
+            VerticalAlignment="Top" 
+            Width="250" 
+            Margin="39,133,0,0" 
+            Opacity="0.6"/>
+        <Button 
+           
+            Content="Wyszukaj wykładowce" 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Top" 
+            Width="250" 
+            Margin="485,155,0,0" 
+            Height="80" 
+            RenderTransformOrigin="1.924,-0.125" 
+            FontSize="24" 
+            FontFamily="Agency FB" 
+            Background="#FFDDDDDD" 
+            BorderBrush="#FFDDDDDD" Panel.ZIndex="1"/>
+        <Border 
+            BorderBrush="#FFFBFBFB" 
+            BorderThickness="1" 
+            HorizontalAlignment="Left" 
+            Height="80" 
+            VerticalAlignment="Top" 
+            Width="250" 
+            Margin="495,133,0,0" 
+            Opacity="0.6"/>
+        <Button 
+            
+            Content="Poprzednia strona" 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Top" 
+            Width="108" 
+            Margin="44,350,0,0" 
+            Height="32" 
+            RenderTransformOrigin="1.924,-0.125" 
+            FontSize="14" 
+            FontFamily="Agency FB" 
+            Background="#FFDDDDDD" 
+            BorderBrush="#FFDDDDDD" Panel.ZIndex="1"/>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="40" Margin="40,346,0,0" VerticalAlignment="Top" Width="116"/>
     </Grid>
 </Page>
