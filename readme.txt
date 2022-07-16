@@ -1,0 +1,1 @@
+Przed uruchomieniem aplikacji należy wgrać bazę danych, która znajduje się w pliku university.txt
