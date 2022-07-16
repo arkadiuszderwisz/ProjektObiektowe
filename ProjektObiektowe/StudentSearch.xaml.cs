@@ -35,5 +35,10 @@ namespace ProjektObiektowe
             select new { students.student_id, students.first_name, students.surname, students.date_of_birth, students.group_no };
             dataGrid1.ItemsSource = query.ToList();
         }
+
+        private void poprzedniaStrona_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.GoBack();
+        }
     }
 }

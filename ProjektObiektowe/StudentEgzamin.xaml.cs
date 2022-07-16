@@ -37,5 +37,10 @@ namespace ProjektObiektowe
 
             dataGrid1.ItemsSource = query.ToList();
         }
+
+        private void poprzedniaStrona_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.GoBack();
+        }
     }
 }

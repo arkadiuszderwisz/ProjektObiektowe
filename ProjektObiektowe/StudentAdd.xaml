@@ -28,7 +28,7 @@
             Width="173" 
             Margin="258,72,0,0" 
             VerticalContentAlignment="Center" 
-            Foreground="#FFBDBDBD"/>
+            Foreground="#000"/>
         <Label 
             Content="Nazwisko" 
             HorizontalAlignment="Left" 
@@ -48,7 +48,7 @@
             Width="173" 
             Margin="258,139,0,0" 
             VerticalContentAlignment="Center" 
-            Foreground="#FFBDBDBD"/>
+            Foreground="#000"/>
         <Label 
             Content="Data urodzenia" 
             HorizontalAlignment="Left" 
@@ -68,7 +68,7 @@
             Width="173" 
             Margin="258,207,0,0" 
             VerticalContentAlignment="Center" 
-            Foreground="#FFBDBDBD"/>
+            Foreground="#000"/>
         <Label 
             Content="Numer grupy" 
             HorizontalAlignment="Left" 
@@ -88,7 +88,7 @@
             Width="173" 
             Margin="258,275,0,0" 
             VerticalContentAlignment="Center" 
-            Foreground="#FFBDBDBD"/>
+            Foreground="#000"/>
         <Button 
             Click="akcjaDodawanie_Click"
             Content="Dodaj" 
@@ -103,5 +103,19 @@
             Background="#FFDDDDDD" 
             BorderBrush="#FFDDDDDD"/>
         <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="65" Margin="513,67,0,0" VerticalAlignment="Top" Width="207"/>
+        <Button 
+            Click="poprzedniaStrona_Click"
+            Content="Poprzednia strona" 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Top" 
+            Width="108" 
+            Margin="44,350,0,0" 
+            Height="32" 
+            RenderTransformOrigin="1.924,-0.125" 
+            FontSize="14" 
+            FontFamily="Agency FB" 
+            Background="#FFDDDDDD" 
+            BorderBrush="#FFDDDDDD" Panel.ZIndex="1"/>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="40" Margin="40,346,0,0" VerticalAlignment="Top" Width="116"/>
     </Grid>
 </Page>

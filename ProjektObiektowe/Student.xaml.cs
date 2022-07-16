@@ -27,7 +27,7 @@ namespace ProjektObiektowe
 
         private void poprzedniaStrona_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new Uri("Home.xaml", UriKind.Relative));
+            this.NavigationService.GoBack();
         }
         private void studentAdd_Click(object sender, RoutedEventArgs e)
         {

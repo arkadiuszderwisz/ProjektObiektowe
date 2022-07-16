@@ -24,5 +24,17 @@ namespace ProjektObiektowe
         {
             InitializeComponent();
         }
+
+        private void akcjaDodawanie_Click(object sender, RoutedEventArgs e)
+        {
+            DataSet1TableAdapters.employeesTableAdapter info = new DataSet1TableAdapters.employeesTableAdapter();
+            info.AddWykladowca(wykladowcaImie.Text, wykladowcaNazwisko.Text, wykladowcaData.Text, wykladowcaPESEL.Text);
+            MessageBox.Show("Pomyślnie dodano");
+        }
+
+        private void poprzedniaStrona_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.GoBack();
+        }
     }
 }

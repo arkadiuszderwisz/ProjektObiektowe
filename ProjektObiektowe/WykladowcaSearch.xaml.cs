@@ -20,9 +20,25 @@ namespace ProjektObiektowe
     /// </summary>
     public partial class WykladowcaSearch : Page
     {
+
+        universityEntities dataEntities = new universityEntities();
         public WykladowcaSearch()
         {
             InitializeComponent();
+        }
+
+        private void akcjaSzukanie_Click(object sender, RoutedEventArgs e)
+        {
+            string zmienna = wykladowcaNazwisko.Text;
+            var query =
+            from employees in dataEntities.employees
+            where employees.surname == zmienna
+            select new { employees.employee_id, employees.first_name, employees.surname, employees.PESEL };
+            dataGrid1.ItemsSource = query.ToList();
+        }
+        private void poprzedniaStrona_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.GoBack();
         }
     }
 }

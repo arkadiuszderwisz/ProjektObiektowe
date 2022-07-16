@@ -9,6 +9,111 @@
       Title="WykladowcaAdd">
 
     <Grid>
-        
+        <Label 
+            Content="Imie" 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Top" 
+            Margin="136,72,0,0" Height="35" 
+            Width="105" 
+            Foreground="White" 
+            FontFamily="Agency FB" 
+            FontSize="20"/>
+        <TextBox 
+            x:Name="wykladowcaImie"
+            HorizontalAlignment="Left" 
+            Height="35" 
+            TextWrapping="Wrap" 
+            Text="Jan" 
+            VerticalAlignment="Top" 
+            Width="173" 
+            Margin="258,72,0,0" 
+            VerticalContentAlignment="Center" 
+            Foreground="#000"/>
+        <Label 
+            Content="Nazwisko" 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Top" 
+            Margin="136,139,0,0" Height="35" 
+            Width="105" 
+            Foreground="White" 
+            FontFamily="Agency FB" 
+            FontSize="20"/>
+        <TextBox 
+            x:Name="wykladowcaNazwisko"
+            HorizontalAlignment="Left" 
+            Height="35" 
+            TextWrapping="Wrap" 
+            Text="Kowalski" 
+            VerticalAlignment="Top" 
+            Width="173" 
+            Margin="258,139,0,0" 
+            VerticalContentAlignment="Center" 
+            Foreground="#000"/>
+        <Label 
+            Content="PESEL" 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Top" 
+            Margin="136,207,0,0" Height="35" 
+            Width="105" 
+            Foreground="White" 
+            FontFamily="Agency FB" 
+            FontSize="20"/>
+        <TextBox 
+            x:Name="wykladowcaPESEL"
+            HorizontalAlignment="Left" 
+            Height="35" 
+            TextWrapping="Wrap" 
+            Text="12345678901" 
+            VerticalAlignment="Top" 
+            Width="173" 
+            Margin="258,207,0,0" 
+            VerticalContentAlignment="Center" 
+            Foreground="#000"/>
+        <Label 
+            Content="Data zatrudnienia" 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Top" 
+            Margin="136,275,0,0" Height="35" 
+            Width="105" 
+            Foreground="White" 
+            FontFamily="Agency FB" 
+            FontSize="17"/>
+        <DatePicker
+            x:Name="wykladowcaData"
+            Height="35"
+            Width="173" 
+            Margin="258,275,369,140" 
+            FontSize="18" 
+            FontFamily="Agency FB"
+            BorderBrush="Transparent"
+            ></DatePicker>
+        <Button 
+            Click="akcjaDodawanie_Click"
+            Content="Dodaj" 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Top" 
+            Width="197" 
+            Margin="518,72,0,0" 
+            Height="55" 
+            RenderTransformOrigin="1.924,-0.125" 
+            FontSize="18" 
+            FontFamily="Agency FB" 
+            Background="#FFDDDDDD" 
+            BorderBrush="#FFDDDDDD"/>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="65" Margin="513,67,0,0" VerticalAlignment="Top" Width="207"/>
+        <Button 
+            Click="poprzedniaStrona_Click"
+            Content="Poprzednia strona" 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Top" 
+            Width="108" 
+            Margin="44,350,0,0" 
+            Height="32" 
+            RenderTransformOrigin="1.924,-0.125" 
+            FontSize="14" 
+            FontFamily="Agency FB" 
+            Background="#FFDDDDDD" 
+            BorderBrush="#FFDDDDDD" Panel.ZIndex="1"/>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="40" Margin="40,346,0,0" VerticalAlignment="Top" Width="116"/>
     </Grid>
 </Page>

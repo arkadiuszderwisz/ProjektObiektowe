@@ -36,7 +36,7 @@
             Width="119" 
             Margin="0,135,488,0" 
             VerticalContentAlignment="Center" 
-            Foreground="#FFBDBDBD" HorizontalAlignment="Right"/>
+            Foreground="#000" HorizontalAlignment="Right"/>
         <Button 
             Click="akcjaSzukanie_Click"
             Content="Szukaj" 
@@ -53,5 +53,19 @@
         <DataGrid Name="dataGrid1" Margin="359,56,36,95">
 
         </DataGrid>
+        <Button 
+            Click="poprzedniaStrona_Click"
+            Content="Poprzednia strona" 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Top" 
+            Width="108" 
+            Margin="44,350,0,0" 
+            Height="32" 
+            RenderTransformOrigin="1.924,-0.125" 
+            FontSize="14" 
+            FontFamily="Agency FB" 
+            Background="#FFDDDDDD" 
+            BorderBrush="#FFDDDDDD" Panel.ZIndex="1"/>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="40" Margin="40,346,0,0" VerticalAlignment="Top" Width="116"/>
     </Grid>
 </Page>

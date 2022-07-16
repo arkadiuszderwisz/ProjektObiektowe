@@ -29,5 +29,15 @@ namespace ProjektObiektowe
         {
             this.NavigationService.Navigate(new Uri("Home.xaml", UriKind.Relative));
         }
+
+        private void wykladowcaAdd(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new Uri("WykladowcaAdd.xaml", UriKind.Relative));
+        }
+
+        private void wykladowcaSearch(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new Uri("WykladowcaSearch.xaml", UriKind.Relative));
+        }
     }
 }
